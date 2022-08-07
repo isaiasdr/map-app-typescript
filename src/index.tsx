@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 
 import { MapsApp } from './MapsApp';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiaXNhaWFzZHIiLCJhIjoiY2w2Z3drdXA2MDBmYjNpcnhna285aGRoNCJ9.Y1wGTGYHew6a55dtF16zyw';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_CREDENTIALS || '';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
